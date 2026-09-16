@@ -13,6 +13,9 @@ permissions:
 
 jobs:
 
+  # ==========================================
+  # BUILD AND PUSH IMAGE
+  # ==========================================
   build:
     runs-on: ubuntu-latest
 
@@ -42,6 +45,9 @@ jobs:
             ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:latest
 
 
+  # ==========================================
+  # DEPLOY NEW IMAGE TO ECS
+  # ==========================================
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -54,7 +60,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Deploy to ECS
+      - name: Force New ECS Deployment
         run: |
           aws ecs update-service \
             --cluster nginx-cluster \
