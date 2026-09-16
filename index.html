@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps / CloudOps Engineer Resume</title>
+
+<style>
+    @page {
+        size: Letter;
+        margin: 0.45in;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #fff;
+        color: #222;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.5pt;
+        line-height: 1.25;
+    }
+
+    .resume {
+        max-width: 8.5in;
+        margin: auto;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 21pt;
+        letter-spacing: 0.5px;
+    }
+
+    .header .title {
+        margin-top: 2px;
+        font-size: 11pt;
+        font-weight: bold;
+    }
+
+    .contact {
+        margin-top: 4px;
+        font-size: 8.5pt;
+    }
+
+    .section {
+        margin-top: 7px;
+    }
+
+    .section-title {
+        font-size: 10.5pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid #333;
+        padding-bottom: 2px;
+        margin-bottom: 4px;
+    }
+
+    .summary {
+        text-align: justify;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        gap: 2px 8px;
+    }
+
+    .skill-name {
+        font-weight: bold;
+    }
+
+    .job {
+        margin-bottom: 6px;
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    .job-subheader {
+        display: flex;
+        justify-content: space-between;
+        font-style: italic;
+        margin-top: 1px;
+    }
+
+    ul {
+        margin: 3px 0 0 17px;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 2px;
+    }
+
+    .project {
+        margin-bottom: 5px;
+    }
+
+    .project-title {
+        font-weight: bold;
+    }
+
+    .education-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .certs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px 20px;
+    }
+
+    @media print {
+        body {
+            background: white;
+        }
+
+        .resume {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>JORDAN PATEL</h1>
+        <div class="title">DEVOPS / CLOUDOPS ENGINEER</div>
+        <div class="contact">
+            Boston, MA &nbsp; | &nbsp;
+            (555) 555-5555 &nbsp; | &nbsp;
+            jordan.patel@email.com &nbsp; | &nbsp;
+            linkedin.com/in/jordanpatel &nbsp; | &nbsp;
+            github.com/jordanpatel
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            DevOps / CloudOps Engineer with 6+ years of experience designing, automating,
+            deploying, and supporting cloud infrastructure and production applications.
+            Strong background in AWS, Linux, Kubernetes, Terraform, Docker, Ansible, and
+            CI/CD. Experienced in infrastructure automation, cloud migrations, production
+            troubleshooting, monitoring, security hardening, and highly available systems.
+            Skilled at collaborating with development, security, and operations teams to
+            improve reliability, deployment speed, and operational efficiency.
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+
+        <div class="skills">
+            <div class="skill-name">Cloud:</div>
+            <div>AWS (EC2, VPC, IAM, S3, RDS, ECS, EKS, Lambda, CloudWatch, SNS, ALB, Route 53)</div>
+
+            <div class="skill-name">DevOps:</div>
+            <div>Terraform, Ansible, Docker, Kubernetes, Helm, Git, GitHub Actions, Jenkins</div>
+
+            <div class="skill-name">CI/CD:</div>
+            <div>GitHub Actions, Jenkins, automated testing, artifact management, security scanning, deployments</div>
+
+            <div class="skill-name">Linux:</div>
+            <div>RHEL, Ubuntu, Amazon Linux, Bash, systemd, networking, storage, troubleshooting, patching</div>
+
+            <div class="skill-name">Monitoring:</div>
+            <div>CloudWatch, Grafana, Prometheus, ELK, logs, metrics, alerts, incident response</div>
+
+            <div class="skill-name">Security:</div>
+            <div>IAM, least privilege, Secrets Manager, security groups, vulnerability scanning, STIG/OpenSCAP</div>
+
+            <div class="skill-name">Languages:</div>
+            <div>Python, Bash, YAML, JSON, HCL</div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Senior DevOps / CloudOps Engineer — ABC Technologies</span>
+                <span>2023 – Present</span>
+            </div>
+            <div class="job-subheader">
+                <span>Boston, MA</span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li>Designed and supported AWS infrastructure across EC2, VPC, IAM, S3, RDS, ECS, EKS, Lambda, ALB, and CloudWatch environments.</li>
+                <li>Built reusable <b>Terraform</b> infrastructure modules for networking, compute, IAM, databases, security groups, and multi-environment deployments.</li>
+                <li>Managed production Kubernetes workloads using <b>EKS</b>, including deployments, services, ingress, ConfigMaps, Secrets, scaling, and rolling updates.</li>
+                <li>Developed <b>GitHub Actions and Jenkins CI/CD pipelines</b> for automated testing, Docker image builds, security scanning, artifact publishing, and Kubernetes deployments.</li>
+                <li>Automated Linux configuration management, patching, service deployment, and operational tasks using <b>Ansible and Bash</b>.</li>
+                <li>Implemented CloudWatch and Grafana monitoring, dashboards, alerts, and centralized logging to improve production visibility.</li>
+                <li>Performed root-cause analysis for CPU, memory, storage, networking, application, and deployment issues in production environments.</li>
+                <li>Improved deployment consistency by replacing manual infrastructure and application procedures with infrastructure-as-code and automated pipelines.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>DevOps / Linux Engineer — XYZ Solutions</span>
+                <span>2020 – 2023</span>
+            </div>
+            <div class="job-subheader">
+                <span>Massachusetts</span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li>Administered and supported 200+ RHEL and Ubuntu Linux servers across on-premises and AWS environments.</li>
+                <li>Automated OS patching, configuration changes, user management, service administration, and health checks using Ansible and Bash.</li>
+                <li>Supported AWS EC2 instances, security groups, IAM roles, S3, VPC networking, and application infrastructure.</li>
+                <li>Created Docker images and supported containerized applications deployed through Kubernetes and CI/CD pipelines.</li>
+                <li>Investigated production incidents using system logs, application logs, network connectivity tests, CPU/memory analysis, and service diagnostics.</li>
+                <li>Implemented Git-based infrastructure and deployment workflows using Terraform, GitHub, and Jenkins.</li>
+                <li>Worked with development and security teams to troubleshoot application failures, firewall issues, permissions, certificates, and infrastructure problems.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Linux Systems Administrator — DEF Corporation</span>
+                <span>2019 – 2020</span>
+            </div>
+
+            <ul>
+                <li>Supported RHEL and Ubuntu servers including systemd services, filesystems, networking, packages, users, permissions, and scheduled jobs.</li>
+                <li>Performed server monitoring, incident response, patching, backup validation, and production troubleshooting.</li>
+                <li>Created Bash scripts to automate repetitive administrative tasks and operational checks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <div class="section-title">Selected Projects</div>
+
+        <div class="project">
+            <span class="project-title">AWS Kubernetes Platform:</span>
+            Built an EKS platform using Terraform with VPC networking, IAM roles, ALB ingress,
+            Kubernetes deployments, autoscaling, CloudWatch monitoring, and GitHub Actions CI/CD.
+        </div>
+
+        <div class="project">
+            <span class="project-title">AWS Infrastructure Automation:</span>
+            Automated multi-environment AWS infrastructure using Terraform modules for VPC,
+            EC2, IAM, security groups, RDS, and application infrastructure.
+        </div>
+
+        <div class="project">
+            <span class="project-title">DevSecOps Pipeline:</span>
+            Created CI/CD automation integrating automated tests, SonarQube, Trivy,
+            Docker, artifact repositories, Amazon ECR, and Kubernetes deployments.
+        </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-title">Certifications</div>
+
+        <div class="certs">
+            <div>AWS Certified Cloud Practitioner</div>
+            <div>HashiCorp Certified: Terraform Associate</div>
+            <div>Certified Kubernetes Administrator (CKA)</div>
+            <div>CompTIA Security+</div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="education-row">
+            <b>Master of Science in Computer Science</b>
+            <span>Georgia Institute of Technology</span>
+        </div>
+
+        <div class="education-row">
+            <b>Bachelor of Science in Computer Science</b>
+            <span>Framingham State University</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
