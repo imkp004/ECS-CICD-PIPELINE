@@ -140,7 +140,7 @@ resource "aws_ecs_task_definition" "nginx" {
   container_definitions = jsonencode([
     {
       name      = "nginx"
-      image     = "nginx:latest"
+      image     = "267673636159.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest"
       essential = true
 
       portMappings = [

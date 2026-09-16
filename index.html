@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirtan's Cloud App</title>
+
+    <title>Kirtan's ECS Deployment</title>
 
     <style>
         * {
@@ -12,9 +14,9 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #020617, #1e1b4b);
+            color: #ffffff;
         }
 
         .container {
@@ -26,55 +28,72 @@
         }
 
         .card {
-            max-width: 700px;
             width: 100%;
-            background: #1e293b;
-            border-radius: 20px;
-            padding: 50px;
+            max-width: 850px;
+            padding: 55px;
             text-align: center;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid #334155;
+            border-radius: 24px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
         }
 
-        .icon {
-            font-size: 70px;
-            margin-bottom: 20px;
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #064e3b;
+            color: #6ee7b7;
+            font-weight: bold;
+            margin-bottom: 25px;
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 52px;
             margin: 0 0 15px;
         }
 
         .subtitle {
-            font-size: 22px;
+            font-size: 21px;
             color: #94a3b8;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
+            line-height: 1.6;
         }
 
-        .status {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 30px;
-            background: #166534;
-            color: #bbf7d0;
-            font-weight: bold;
+        .deployment {
+            padding: 25px;
             margin-bottom: 30px;
+            border-radius: 16px;
+            background: #172554;
+            border: 1px solid #1d4ed8;
         }
 
-        .info {
+        .deployment h2 {
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        .deployment p {
+            margin: 0;
+            color: #bfdbfe;
+        }
+
+        .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
         }
 
         .box {
-            background: #334155;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 22px;
+            background: #1e293b;
+            border-radius: 14px;
+            border: 1px solid #334155;
         }
 
         .box h3 {
             margin: 0 0 8px;
+            font-size: 18px;
             color: #38bdf8;
         }
 
@@ -86,6 +105,21 @@
         .footer {
             margin-top: 35px;
             color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -96,44 +130,50 @@
 
     <div class="card">
 
-        <div class="icon">☁️</div>
-
-        <h1>Cloud Deployment Successful!</h1>
-
-        <p class="subtitle">
-            This application was deployed through AWS ECS Fargate.
-        </p>
-
-        <div class="status">
-            ● APPLICATION RUNNING
+        <div class="badge">
+            ● DEPLOYMENT SUCCESSFUL
         </div>
 
-        <div class="info">
+        <h1>Version 3.0 🚀</h1>
+
+        <p class="subtitle">
+            This page was updated through the CI/CD pipeline.
+            The new Docker image was deployed to AWS ECS Fargate.
+        </p>
+
+        <div class="deployment">
+            <h2>⚡ New Build Deployed</h2>
+            <p>
+                GitHub Actions → Amazon ECR → Amazon ECS
+            </p>
+        </div>
+
+        <div class="grid">
 
             <div class="box">
-                <h3>Container</h3>
+                <h3>🐳 Container</h3>
                 <p>NGINX</p>
             </div>
 
             <div class="box">
-                <h3>Platform</h3>
+                <h3>☁️ Platform</h3>
                 <p>AWS ECS Fargate</p>
             </div>
 
             <div class="box">
-                <h3>Image</h3>
+                <h3>📦 Registry</h3>
                 <p>Amazon ECR</p>
             </div>
 
             <div class="box">
-                <h3>Pipeline</h3>
+                <h3>🔄 Deployment</h3>
                 <p>GitHub Actions</p>
             </div>
 
         </div>
 
         <div class="footer">
-            Version 2.0 — New Deployment
+            Kirtan Patel • DevOps / Cloud Deployment Demo
         </div>
 
     </div>
@@ -142,3 +182,4 @@
 
 </body>
 </html>
+```
